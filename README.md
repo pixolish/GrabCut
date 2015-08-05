@@ -12,15 +12,14 @@ You can compile by include the header file listed in code and run it by passing 
 First give the input of number of iteration  from the keyboard and then 
 Mark a rectangle of the object you want to segment by  left button of mouse and press right button of the mouse to see the region of the rectangle 
 and  make the process continue
-!(screenshot1.png)
-!(screenshot2.png)
-!(screenshot3.png)
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot1.png "Original Image")
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot2.png "Marked Image")
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot3.png "Marked Region")
 Press enter to continue the GrabCut process and see the out put segmented result, press 'Esc'from keyboard to exit from the process
-!(screenshot4.png)
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot4.png "Grabcut output")
  
 # How does it work?
-The GrabCut function will first take the input image with rectangle information along with mask image, rectangle , background and foreground model blank image
-, finally it will calculate mask and using compare function make it probable foreground by the Macro of opencv GC_PR_FGD
+The GrabCut function will first take the input image with rectangle information along with mask image, rectangle , background and foreground model blank image,finally it will calculate mask and using compare function make it probable foreground by the Macro of opencv GC_PR_FGD
 the rgb image pixel values on that specified region will be bitwise ANDed with the mask.
 ```css
 		cv::grabCut(img,result,rect,bg,fg,i,GC_INIT_WITH_RECT);
