@@ -10,12 +10,12 @@ You can compile by include the header file listed in code and run it by passing 
 
 # Process to get result
 First give the input of number of iteration  from the keyboard and then 
-Mark a rectangle of the object you want to segment by  left button of mouse and press right button of the mouse to see the region of the rectangle 
-and  make the process continue
+Mark a rectangle of the object you want to segment by  left button of mouse and press right button of the mouse to see the region of the rectangle and  make the process continue, Press enter to continue the GrabCut process and see the out put segmented result,press 'Esc'from keyboard to exit from the process
 ![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot1.png "Original Image")
 ![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot2.png "Marked Image")
+
 ![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot3.png "Marked Region")
-Press enter to continue the GrabCut process and see the out put segmented result, press 'Esc'from keyboard to exit from the process
+
 ![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot4.png "Grabcut output")
  
 # How does it work?
