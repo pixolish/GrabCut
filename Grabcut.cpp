@@ -22,13 +22,13 @@ vector<Point>Pf,Pb;
 
 void mouseHandler(int event, int x, int y, int flags, void* param)
 {
-	if (event == CV_EVENT_LBUTTONDOWN && !drag)
+	if (event == EVENT_LBUTTONDOWN && !drag)
 	{
 		point1 = Point(x, y);
 		drag = 1;
 	}
 
-	else if (event == CV_EVENT_MOUSEMOVE && drag)
+	else if (event == EVENT_MOUSEMOVE && drag)
 	{
 		
 		Mat img1 = img.clone();
@@ -38,7 +38,7 @@ void mouseHandler(int event, int x, int y, int flags, void* param)
 			
 	}
 
-	else if (event == CV_EVENT_LBUTTONUP && drag)
+	else if (event == EVENT_LBUTTONUP && drag)
 	{
 		point2 = Point(x, y);
 		rect = Rect(point1.x,point1.y,x-point1.x,y-point1.y);
@@ -47,7 +47,7 @@ void mouseHandler(int event, int x, int y, int flags, void* param)
 			
 	}
 
-	else if (event == CV_EVENT_RBUTTONDOWN)
+	else if (event == EVENT_RBUTTONDOWN)
 	{
 		
 		select_flag = false;
