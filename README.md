@@ -9,6 +9,7 @@ then you find the segmented grabcut output
 **Changes**: `CV_EVENT_LBUTTONDOWN` etc. mouse call back events don't work anymore for OpenCV 3.x versions. These have to be replaced with `EVENT_LBUTTONDOWN`. 
 
 **Compilation (Linux):** ```g++ Grabcut.cpp `pkg-config opencv --cflags --libs` -o Grabcut``` 
+
 **Executation (Linux):**`./Grabcut screenshot1.png`
 
 # Process to get result
@@ -17,10 +18,10 @@ Mark a rectangle of the object you want to segment by  left button of mouse and 
 
 # Sample Images
 
-<center>![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot1.png "Original Image")</center>
-<center>![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot2.png "Marked Image")</center>
-<center>![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot3.png "Marked Region")</center>
-<center>![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot4.png "Grabcut output")</center>
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot1.png "Original Image")
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot2.png "Marked Image")
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot3.png "Marked Region")
+![Alt text](https://github.com/pixolish/GrabCut/blob/master/screenshot4.png "Grabcut output")
  
 # How does it work?
 
